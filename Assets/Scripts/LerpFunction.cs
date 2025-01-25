@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cloudLerpn : MonoBehaviour
+public class lerpFunction : MonoBehaviour
 {
     [Range(0, 1)] //speed of lerp
     public float tc; 
