@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 437785139}
   - component: {fileID: 437785138}
   - component: {fileID: 437785140}
+  - component: {fileID: 437785141}
   m_Layer: 0
   m_Name: Clouds
   m_TagString: Untagged
@@ -285,7 +286,7 @@ Transform:
   m_GameObject: {fileID: 437785137}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.74, y: 1.01, z: -0.21}
+  m_LocalPosition: {x: 17.64, y: 1.31, z: -0.21}
   m_LocalScale: {x: 0.58959734, y: 0.48486626, z: 0.48486626}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -298,13 +299,29 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437785137}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52475d14f1698484485ce93a1567ab8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cspeed: 0.003
   resetcloudpx: 20
   startcloudpx: -20
+--- !u!114 &437785141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437785137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efd2cd0ff439ab54f9a7ef34fdbdbec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tc: 0
+  startc: {x: -13.36, y: 1.31}
+  endc: {x: 17.61, y: 1.31}
 --- !u!1 &896266549
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,6 +709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52475d14f1698484485ce93a1567ab8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cspeed: 0.003
   resetcloudpx: 20
   startcloudpx: -20
 --- !u!212 &1638092524

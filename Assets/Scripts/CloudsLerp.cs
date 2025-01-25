@@ -6,7 +6,7 @@ using UnityEngine;
 public class CloudsLerp : MonoBehaviour
 {
 
-    float cspeed = 0.003f; //the speed of clouds
+    public float cspeed = 0.5f; //the speed of clouds
     public float resetcloudpx = 20; //cloud position resets when the x value reaches x=20
     public float startcloudpx = -20; //cloud position's starting position
 
