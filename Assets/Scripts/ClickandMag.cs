@@ -14,6 +14,8 @@ public class ClickandMag : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetMouseButtonDown(0)) {
+            Vector3 lcdSize = 2;
 
     }
 }

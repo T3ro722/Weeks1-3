@@ -5,7 +5,7 @@ using UnityEngine;
 public class animationCurve : MonoBehaviour
 {
     public AnimationCurve curve;
-    [Range(0,1)]
+    [Range(0,1)]//restrict t value
     public float t;
 
 
@@ -18,10 +18,10 @@ public class animationCurve : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        t += Time.deltaTime;
+        t += Time.deltaTime;//time each frame
 
         if(t>1)
-        { t = 0; }
-       transform.localScale = Vector3.one * curve.Evaluate(t);
+        { t = 0; }//if t>1, resets and loop
+       transform.localScale = Vector3.one * curve.Evaluate(t);//calculate t
     }
 }
