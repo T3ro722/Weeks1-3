@@ -2,14 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class lerpFunction : MonoBehaviour
+public class Cursorcircle : MonoBehaviour
 {
-    [Range(0, 1)] //speed of lerp
-    public float tc; 
-
-    public Vector3 startc;
-    public Vector3 endc;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +13,9 @@ public class lerpFunction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.Lerp(startc, endc, tc);//lerp function
+        Vector3 mousePos = Input.mousePosition;
+        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+        mousePos.z = -2.3f;
+        transform.position = mousePos;
     }
 }
